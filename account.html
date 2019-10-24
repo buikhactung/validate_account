@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="box">
+<button type="button" onclick="checkAccount()">Kiểm tra</button>
+<script>
+    function checkAccount() {
+        let re = /^[_a-z0-9]{6,}$/;
+        let room = document.getElementById("box").value;
+        if (re.test(room) == false) {
+            alert("Account ko hợp lệ")
+        }else{
+            alert("Account hợp lệ")
+        }
+    }
+</script>
+
+</body>
+</html>
